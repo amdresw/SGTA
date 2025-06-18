@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class DetaillInventory
+    public class DetaillInventory : BaseEntity
     {
         public int Id { get; set; }
         public int ServiceOrder_Id { get; set; }
