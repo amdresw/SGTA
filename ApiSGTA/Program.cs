@@ -1,4 +1,18 @@
+// Add new USINGS needed to make it works
+using Microsoft.EntityFrameworkCore;
+using Infrastructure.Data;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Conexion con la base de datos PostgreSQL
+builder.Services.AddDbContext<AutoTallerDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
