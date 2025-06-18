@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class SpacePart
+    public class SpacePart : BaseEntity
     {
         public int Id { get; set; }
         public string? Code { get; set; }
