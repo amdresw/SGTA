@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
         "projectName": "ApiSGTA",
-        "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
-        "packagesPath": "C:\\Users\\andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\ApiSGTA\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj"
+              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj"
               },
-              "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -76,6 +77,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,21 +103,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -110,8 +129,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj"
+              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj"
               }
             }
           }
@@ -125,7 +144,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -141,26 +161,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -183,7 +217,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -199,26 +234,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andres\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -230,11 +279,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Application\\Application.csproj"
+              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj"
               },
-              "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj"
+              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj"
               }
             }
           }
@@ -248,7 +297,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -274,12 +324,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

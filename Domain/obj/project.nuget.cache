@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "S6sAUgu9g8s=",
+  "dgSpecHash": "kshfyVvfiF0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\andres\\Documents\\CAMPUS\\c#\\.Net\\SGTA\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
