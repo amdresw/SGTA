@@ -1,16 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
-    public class TypeService : IEntityTypeConfiguration<TypeService>
+    public class TypeServiceConfiguration : IEntityTypeConfiguration<TypeService>
     {
         public void Configure(EntityTypeBuilder<TypeService> builder)
         {
-            builder.ToTable("TypeService");
+            builder.ToTable("type_service");
 
             builder.HasKey(ts => ts.Id);
             builder.Property(ts => ts.Id)

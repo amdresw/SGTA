@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Inventory : BaseEntity
+    public class Inspection : BaseEntity
     {
         public int Id { get; set; }
         public string? Name { get; set; }
 
-        public ICollection<DetaillInventory> DetaillInventory = new HashSet<DetaillInventory>();
+        public ICollection<DetaillInspection> DetaillInspections { get; set; } = new HashSet<DetaillInspection>();
     }
 }

@@ -10,6 +10,6 @@ namespace Domain.Entities
         public int Id { get; set; }
         public string? Name { get; set; }
 
-        public ICollection<ServiceOrder> ServiceOrder { get; set; } = new HashSet<ServiceOrder>();
+        public ICollection<ServiceOrder> ServiceOrders { get; set; } = new HashSet<ServiceOrder>();
     }
 }

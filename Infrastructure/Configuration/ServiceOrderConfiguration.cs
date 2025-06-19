@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
@@ -10,7 +8,7 @@ namespace Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<ServiceOrder> builder)
         {
-            builder.ToTable("ServiceOrder");
+            builder.ToTable("service_order");
 
             builder.HasKey(so => so.Id);
             builder.Property(so => so.Id)
@@ -19,50 +17,54 @@ namespace Infrastructure.Configuration
                 .HasColumnName("id");
 
             builder.Property(so => so.Vehicles_Id)
-                .HasColumnName("Vehicles_id");
+                .HasColumnName("vehicles_id");
 
             builder.Property(so => so.TypeService_Id)
-                .HasColumnName("TypeService_id");
+                .HasColumnName("type_service_id");
 
             builder.Property(so => so.Client_Id)
-                .HasColumnName("Client_id");
+                .HasColumnName("client_id");
 
             builder.Property(so => so.State_Id)
-                .HasColumnName("State_id");
-            
-             builder.Property(so => so.EntryDate)
-                   .IsRequired()
-                   .HasColumnName("EntryDate");
+                .HasColumnName("state_id");
+
+            builder.Property(so => so.EntryDate)
+                .IsRequired()
+                .HasColumnType("timestamp")
+                .HasColumnName("entry_date");
 
             builder.Property(so => so.ExitDate)
-                   .IsRequired()
-                   .HasColumnName("ExitDate");
+                .HasColumnType("timestamp")
+                .HasColumnName("exit_date");
 
+            // Otros campos
             builder.Property(so => so.IsAuthorized)
-                   .IsRequired()
-                   .HasColumnName("IsAuthorized");
+                .IsRequired()
+                .HasDefaultValue(false)
+                .HasColumnName("is_authorized");
 
             builder.Property(so => so.ClientMessage)
-                   .HasMaxLength(1000)
-                   .HasColumnName("ClientMessage");
+                .HasColumnName("client_message");
 
-            builder.HasOne(so => so.State)
-                  .WithMany()
-                  .HasForeignKey(so => so.State_Id);
+            builder.HasOne(so => so.Vehicle)
+                .WithMany(v => v.ServiceOrders)
+                .HasForeignKey(so => so.Vehicles_Id)
+                .OnDelete(DeleteBehavior.Restrict); 
 
             builder.HasOne(so => so.TypeService)
-                   .WithMany()
-                   .HasForeignKey(so => so.TypeService_Id);
+                .WithMany(ts => ts.ServiceOrders)
+                .HasForeignKey(so => so.TypeService_Id)
+                .OnDelete(DeleteBehavior.Restrict); 
 
-                   
-            builder.HasOne(so => so.Vehicle)
-                .WithMany()
-                .HasForeignKey(so => so.Vehicles_Id);
+            builder.HasOne(so => so.State)
+                .WithMany(s => s.ServiceOrders)
+                .HasForeignKey(so => so.State_Id)
+                .OnDelete(DeleteBehavior.Restrict); 
 
             builder.HasOne(so => so.Client)
-                .WithMany()
-                .HasForeignKey(so => so.Client_Id);
-
+                .WithMany(c => c.ServiceOrders)
+                .HasForeignKey(so => so.Client_Id)
+                .OnDelete(DeleteBehavior.Restrict); 
         }
     }
 }

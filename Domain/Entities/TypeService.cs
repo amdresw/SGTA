@@ -12,6 +12,6 @@ namespace Domain.Entities
         public int Duration { get; set; }
         public decimal Price { get; set; }
 
-        public ICollection<ServiceOrder> ServiceOrder = new HashSet<ServiceOrder>();
+        public ICollection<ServiceOrder> ServiceOrders { get; set; } = new HashSet<ServiceOrder>();
     }
 }

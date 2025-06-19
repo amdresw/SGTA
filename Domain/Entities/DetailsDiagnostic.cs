@@ -10,7 +10,7 @@ namespace Domain.Entities
         public int ServiceOrder_Id { get; set; }
         public int Diagnostic_Id { get; set; }
 
-        public ServiceOrder ServiceOrder { get; set; }
-        public Diagnostic Diagnostic { get; set; }
+        public ServiceOrder? ServiceOrder { get; set; }
+        public Diagnostic? Diagnostic { get; set; }
     }
 }

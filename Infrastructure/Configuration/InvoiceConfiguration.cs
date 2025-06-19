@@ -1,7 +1,6 @@
-using System;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Domain.Entities;
 
 namespace Infrastructure.Configuration
 {
@@ -9,11 +8,10 @@ namespace Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<Invoice> builder)
         {
-            builder.ToTable("Invoice");
+            builder.ToTable("invoice");
 
             builder.HasKey(i => i.Id);
-
-            builder.Property(i => i.Id)
+            builder.Property(or => or.Id)
                 .ValueGeneratedOnAdd()
                 .IsRequired()
                 .HasColumnName("id");
@@ -26,10 +24,10 @@ namespace Infrastructure.Configuration
                 .IsRequired()
                 .HasColumnName("Date");
 
-            builder.HasOne(i => i.ServiceOrder)
-                .WithOne(so => so.Invoice)
-                .HasForeignKey<Invoice>(i => i.ServiceOrder_Id)
-                .OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(so => so.ServiceOrders)
+                .WithMany(i => i.Invoices)
+                .HasForeignKey(so => so.ServiceOrder_Id)
+                .OnDelete(DeleteBehavior.Cascade);;
         }
     }
 }

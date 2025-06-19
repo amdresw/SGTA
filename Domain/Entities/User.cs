@@ -14,10 +14,10 @@ namespace Domain.Entities
         public string? Email { get; set; }
         public string? Password { get; set; }
 
-        public IColletion<ServiceOrder>? ServiceOrders { get; set; } = new HashSet<ServiceOrder>();
-        public IColletion<Auditory>? Auditories { get; set; } = new HashSet<Auditory>();
-        public IColletion<UserRol>? UserRols { get; set; } = new HashSet<UserRol>();
-        public IColletion<Diagnostic>? Diagnostics { get; set; } = new HashSet<Diagnostic>();
-        public IColletion<UserSpessialization>? UserSpessializations { get; set; } = new HashSet<UserSpessialization>();
+        public ICollection<ServiceOrder>? ServiceOrders { get; set; } = new HashSet<ServiceOrder>();
+        public ICollection<Auditory>? Auditories { get; set; } = new HashSet<Auditory>();
+        public ICollection<UserRol>? UserRols { get; set; } = new HashSet<UserRol>();
+        public ICollection<Diagnostic>? Diagnostics { get; set; } = new HashSet<Diagnostic>();
+        public ICollection<UserSpessialization>? UserSpessializations { get; set; } = new HashSet<UserSpessialization>();
     }
 }
