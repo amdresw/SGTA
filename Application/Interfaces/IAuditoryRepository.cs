@@ -2,7 +2,7 @@ using Domain.Entities;
 
 namespace Application.Interfaces
 {
-    public interface IAuditoyRepository : IGenericRepository<Auditory>
+    public interface IAuditoryRepository : IGenericRepository<Auditory>
     {
         
     }

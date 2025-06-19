@@ -10,18 +10,18 @@ namespace Infrastructure.Data
 {
     public class AutoTallerDbContext : DbContext
     {
-        public AutoTallerDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public AutoTallerDbContext(DbContextOptions<AutoTallerDbContext> options) : base(options) { }
 
         public DbSet<Auditory> Auditory { get; set; }
         public DbSet<Client> Client { get; set; }
-        public DbSet<DetaillInventory> DetailInventory { get; set; }
+        public DbSet<DetaillInspection> DetaillInspection { get; set; }
         public DbSet<Diagnostic> Diagnostic { get; set; }
-        public DbSet<Inventory> Inventory { get; set; }
+        public DbSet<Inspection> Inspection { get; set; }
         public DbSet<Invoice> Invoice { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<Rol> Rol { get; set; }
         public DbSet<ServiceOrder> ServiceOrder { get; set; }
-        public DbSet<SpacePart> SpacePart { get; set; }
+        public DbSet<SparePart> SparePart { get; set; }
         public DbSet<Spessialization> Spessialization { get; set; }
         public DbSet<State> State { get; set; }
         public DbSet<TypeService> TyperService { get; set; }

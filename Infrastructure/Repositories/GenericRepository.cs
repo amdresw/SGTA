@@ -1,16 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly ApiSGTA _context;
+        private readonly AutoTallerDbContext _context;
 
-        public GenericRepository(ApiSGTA context)
+        public GenericRepository(AutoTallerDbContext context)
 
         {
             _context = context;

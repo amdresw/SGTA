@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {}
+    "/home/camper/Música/SGTA/ApiSGTA/ApiSGTA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj": {
+    "/home/camper/Música/SGTA/ApiSGTA/ApiSGTA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
+        "projectUniqueName": "/home/camper/Música/SGTA/ApiSGTA/ApiSGTA.csproj",
         "projectName": "ApiSGTA",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\ApiSGTA.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\ApiSGTA\\obj\\",
+        "projectPath": "/home/camper/Música/SGTA/ApiSGTA/ApiSGTA.csproj",
+        "packagesPath": "/home/camper/.nuget/packages/",
+        "outputPath": "/home/camper/Música/SGTA/ApiSGTA/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/camper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj"
+              "/home/camper/Música/SGTA/Application/Application.csproj": {
+                "projectPath": "/home/camper/Música/SGTA/Application/Application.csproj"
               },
-              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj"
+              "/home/camper/Música/SGTA/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/camper/Música/SGTA/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -80,19 +80,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.16, 8.0.16]"
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.15, 8.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -103,21 +99,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
+    "/home/camper/Música/SGTA/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj",
+        "projectUniqueName": "/home/camper/Música/SGTA/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\obj\\",
+        "projectPath": "/home/camper/Música/SGTA/Application/Application.csproj",
+        "packagesPath": "/home/camper/.nuget/packages/",
+        "outputPath": "/home/camper/Música/SGTA/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/camper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -129,8 +125,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj"
+              "/home/camper/Música/SGTA/Domain/Domain.csproj": {
+                "projectPath": "/home/camper/Música/SGTA/Domain/Domain.csproj"
               }
             }
           }
@@ -145,7 +141,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -164,15 +160,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -180,21 +172,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
+    "/home/camper/Música/SGTA/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/camper/Música/SGTA/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\obj\\",
+        "projectPath": "/home/camper/Música/SGTA/Domain/Domain.csproj",
+        "packagesPath": "/home/camper/.nuget/packages/",
+        "outputPath": "/home/camper/Música/SGTA/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/camper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -218,7 +210,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -237,15 +229,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -253,21 +241,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj": {
+    "/home/camper/Música/SGTA/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/home/camper/Música/SGTA/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Infrastructure\\obj\\",
+        "projectPath": "/home/camper/Música/SGTA/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/camper/.nuget/packages/",
+        "outputPath": "/home/camper/Música/SGTA/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/camper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -279,11 +267,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Application\\Application.csproj"
+              "/home/camper/Música/SGTA/Application/Application.csproj": {
+                "projectPath": "/home/camper/Música/SGTA/Application/Application.csproj"
               },
-              "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\CAMPUSLANDS\\SGTA\\Domain\\Domain.csproj"
+              "/home/camper/Música/SGTA/Domain/Domain.csproj": {
+                "projectPath": "/home/camper/Música/SGTA/Domain/Domain.csproj"
               }
             }
           }
@@ -298,7 +286,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -327,15 +315,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.16, 8.0.16]"
+              "version": "[8.0.15, 8.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -343,7 +327,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
