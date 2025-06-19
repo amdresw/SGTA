@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
@@ -10,7 +8,7 @@ namespace Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<OrderDetails> builder)
         {
-            builder.ToTable("OrderDetails");
+            builder.ToTable("order_details");
 
             builder.HasKey(od => od.Id);
             builder.Property(od => od.Id)
@@ -23,23 +21,25 @@ namespace Infrastructure.Configuration
                 .HasColumnName("required_pieces");
 
             builder.Property(od => od.TotalPrice)
-                .HasColumnType("decimal")
+                .HasPrecision(18, 2)
                 .IsRequired()
-                .HasColumnName("TotalPrice");
+                .HasColumnName("total_price"); 
 
             builder.Property(od => od.ServiceOrder_Id)
-                .HasColumnName("ServiceOrder_id");
+                .HasColumnName("service_order_id");  
 
-            builder.Property(od => od.SpacePart_Id)
-                .HasColumnName("SpacePart_id");
+            builder.Property(od => od.SparePart_Id)
+                .HasColumnName("spare_part_id");
 
             builder.HasOne(od => od.ServiceOrder)
                 .WithMany(so => so.OrderDetails)
-                .HasForeignKey(od => od.ServiceOrder_Id);
+                .HasForeignKey(od => od.ServiceOrder_Id)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasOne(od => od.SpacePart)
+            builder.HasOne(od => od.SpareParts)
                 .WithMany(sp => sp.OrderDetails)
-                .HasForeignKey(od => od.SpacePart_Id);
+                .HasForeignKey(od => od.SparePart_Id)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

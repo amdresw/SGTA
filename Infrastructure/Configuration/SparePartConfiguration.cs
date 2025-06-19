@@ -1,19 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
-    public class SpacePartConfiguration : IEntityTypeConfiguration<SpacePart>
+    public class SparePartConfiguration : IEntityTypeConfiguration<SparePart>
     {
-        public void Configure(EntityTyoeBuilder<SpacePart> builder)
+        public void Configure(EntityTypeBuilder<SparePart> builder)
         {
-            builder.ToTable("SpacePart");
+            builder.ToTable("spare_part");
 
             builder.HasKey(sp => sp.Id);
-            builder.Property(ospd => sp.Id)
+            builder.Property(sp => sp.Id)
                 .ValueGeneratedOnAdd()
                 .IsRequired()
                 .HasColumnName("id");
@@ -33,6 +31,7 @@ namespace Infrastructure.Configuration
                 .HasColumnName("MiniStock");
 
             builder.Property(sp => sp.UnitPrice)
+                .HasPrecision(18, 2)
                 .HasColumnType("decimal")
                 .HasColumnName("UnitPrice");
 

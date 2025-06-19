@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
@@ -10,7 +8,7 @@ namespace Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<State> builder)
         {
-            builder.ToTable("State");
+            builder.ToTable("state");
             builder.HasKey(s => s.Id);
             builder.Property(s => s.Id)
                 .ValueGeneratedOnAdd()

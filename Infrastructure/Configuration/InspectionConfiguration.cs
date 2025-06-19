@@ -1,21 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Configuration
 {
-    public class InventoryConfiguration : IEntityTypeConfiguration<Inventory>
+    public class InspectionConfiguration : IEntityTypeConfiguration<Inspection>
     {
-        public void Configure(EntityTypeBuilder<Inventory> builder)
+        public void Configure(EntityTypeBuilder<Inspection> builder)
         {
-            builder.ToTable("Inventory");
+            builder.ToTable("inspection");
             builder.HasKey(i => i.Id);
             builder.Property(i => i.Id)
                 .ValueGeneratedOnAdd()
                 .IsRequired()
-                .HasColumn("id");
+                .HasColumnName("id");
 
             builder.Property(i => i.Name)
                 .HasColumnName("Name")
