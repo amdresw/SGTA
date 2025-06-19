@@ -8,7 +8,7 @@ namespace Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<UserRol> builder)
         {
-            builder.ToTable("UserRols");
+            builder.ToTable("UserRoles");
 
             // Clave primaria compuesta
             builder.HasKey(ur => new { ur.User_Id, ur.Rol_Id });
@@ -17,13 +17,13 @@ namespace Infrastructure.Configurations
 
             // Muchos UserRol para un User
             builder.HasOne(ur => ur.User)
-                   .WithMany(u => u.UserRols)
+                   .WithMany(u => u.UserRoles)
                    .HasForeignKey(ur => ur.User_Id)
                    .OnDelete(DeleteBehavior.Cascade);
 
             // Muchos UserRol para un Rol
             builder.HasOne(ur => ur.Rol)
-                   .WithMany(r => r.UserRols)
+                   .WithMany(r => r.UserRoles)
                    .HasForeignKey(ur => ur.Rol_Id)
                    .OnDelete(DeleteBehavior.Cascade);
         }
